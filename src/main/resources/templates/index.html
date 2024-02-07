@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p> Приветик ахахах ! </p>
+<ul>
+    <li th:each="kn : ${boks}" th:text ="${kn.author}"></li>
+</ul>
 </body>
 </html>

@@ -17,6 +17,7 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model){
         Iterable<Books> boks = rep.findAll();
+        model.addAttribute("boks", boks);
         return "index";
     }
 }

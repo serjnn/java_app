@@ -29,4 +29,12 @@ public class MainController {
 
         return "redirect:/";
     }
+
+    @PostMapping("/deleteAll")
+    public String deleteAllBooks() {
+        rep.deleteAll();
+        return "redirect:/";
+    }
+
+
 }

@@ -14,7 +14,7 @@ public class Books {
     private String author;
 
 
-    public Books(){}
+    public Books(){} // ПУСТОЙ КОСТРУКТОР ДОЛЖЕН ПРОСТО БЫТЬ
     public Books (String title, String author){
         this.title = title;
         this.author = author;

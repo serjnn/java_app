@@ -16,5 +16,12 @@
 <ul>
     <li th:each="kn : ${boks}" th:text ="${kn.title} + '-' + ${kn.author}"></li>
 </ul>
+
+<div>
+    <h1>Delete all books</h1>
+    <form action="/deleteAll" method="post">
+        <button type="submit">Delete All Books</button>
+    </form>
+</div>
 </body>
 </html>
